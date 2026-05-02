@@ -22,7 +22,7 @@
       "lq_width": 2,
       "sq_width": 2,
       "retire_width": 5,
-      "mispredict_penalty": 1,
+      "mispredict_penalty": 16,
       "scheduler_size": 128,
       "decode_latency": 1,
       "dispatch_latency": 1,
@@ -57,7 +57,7 @@
 
   "L1D": {
     "sets": 64,
-    "ways": 12,
+    "ways": 8,
     "rq_size": 64,
     "wq_size": 64,
     "pq_size": 8,
@@ -84,7 +84,7 @@
     "prefetch_as_load": false,
     "virtual_prefetch": false,
     "prefetch_activate": "LOAD,PREFETCH",
-    "prefetcher": "no"
+    "prefetcher": "stride_ghb"
   },
 
   "ITLB": {
