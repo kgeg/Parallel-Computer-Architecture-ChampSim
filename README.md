@@ -23,6 +23,7 @@ git submodule update --init
 vcpkg/bootstrap-vcpkg.sh
 vcpkg/vcpkg install
 ```
+*Then make sure to restart the terminal*
 
 # Compile
 
